@@ -1,0 +1,19 @@
+.btn {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding: 1rem;
+    transition: all .3s ease-out;
+    text-decoration: none;
+    border: 2px solid transparent;
+
+    &--pink {
+        background-color: $mainPink;
+
+        &:hover {
+            color: $mainPink;
+            background-color: transparent;
+            border: 2px solid $mainPink;
+        }
+    }
+}

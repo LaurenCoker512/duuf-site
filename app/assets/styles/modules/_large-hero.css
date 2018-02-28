@@ -1,0 +1,69 @@
+.large-hero {
+    position: relative;
+
+    &__text-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-10%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title-large {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $mainOrange;
+        /* text-shadow: 2px 2px 3px #303030; */
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2rem;
+        }
+
+        @mixin atMedium {
+            font-size: 2.8rem;
+        }
+
+        @mixin atLarge {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__title-small {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $mainPink;
+        /* text-shadow: 2px 2px 3px #303030; */
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 1.8rem;
+        }
+
+        @mixin atMedium {
+            font-size: 2.5rem;
+        }
+
+        @mixin atLarge {
+            font-size: 3rem;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+        color: #1e1e1e;
+        text-shadow: -1px 1px 1px #fff;
+        max-width: 43.75rem;
+        margin: 10px auto;
+
+        @mixin atMedium {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 7px;
+    }
+}
