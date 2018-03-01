@@ -28,7 +28,7 @@
         font-size: 1.5rem;
         font-weight: 300;
         color: #fff;
-        /* text-shadow: 2px 2px 3px #303030; */
+        text-shadow: -1px 1px 1px #000;
         margin: 0;
 
         @mixin atSmall {
@@ -48,7 +48,7 @@
         font-size: 1.3rem;
         font-weight: 700;
         color: $mainPink;
-        /* text-shadow: 2px 2px 3px #303030; */
+        text-shadow: -1px 1px 1px #000;
         margin: 0;
 
         @mixin atSmall {

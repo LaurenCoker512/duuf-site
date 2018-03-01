@@ -9,9 +9,21 @@
     &__background {
         height: 30rem;
         width: 100%;
-        background-image: url("../../../assets/images/wedding-4.jpg");
+        background-image: url("../../../assets/images/wedding-4-xs.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+
+        @mixin atSmall {
+            background-image: url("../../../assets/images/wedding-4-s.jpg");
+        }
+
+        @mixin atMedium {
+            background-image: url("../../../assets/images/wedding-4-m.jpg");
+        }
+
+        @mixin atLarge {
+            background-image: url("../../../assets/images/wedding-4.jpg");
+        }
     }
 }

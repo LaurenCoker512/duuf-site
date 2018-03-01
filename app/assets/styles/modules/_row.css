@@ -1,11 +1,18 @@
 .row {
     @mixin clearfix;
 
+    &__4 {
+        @mixin atMedium {
+            width: 27%;
+            float: left;
+        }
+    }
+
     &__5 {
         &--left {
             display: none;
 
-            @mixin atSmall {
+            @mixin atMedium {
                 display: block;
             }
 
