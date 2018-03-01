@@ -168,22 +168,44 @@
 
     <div id="testimonials" class="page-section testimonials" data-matching-link="#testimonials-link">
         <h2 class="title title--white">What Our Visitors <span class="highlight"><strong>Say</strong></span></h2>
-        <div class="row">
+        <div class="row testimonials__container">
             <div class="row__4 testimonials__testimonial">
-                <p>&ldquo;The environment and the energy here is full of love and openness. Everyone is kind and happy to be there, and they have so many groups and activities for all ages. If you're looking for somewhere to feel at home and gain peace of mind, I highly recommend DUUF.&rdquo;</p> - <span class="highlight">Autumn Patton</span>
+                <p>&ldquo;The environment and the energy here is full of love and openness. Everyone is kind and happy to be there, and they have so many groups and activities for all ages. If you're looking for <strong>somewhere to feel at home and gain peace of mind,</strong> I highly recommend DUUF.&rdquo;</p><span class="highlight">Autumn Patton</span>
             </div>
             <div class="row__4 testimonials__testimonial">
-                <p>&ldquo;I have been going to this church off and on for the last few years, but as soon as I got pregnant I knew it was time to join. I love how they teach the children about love, mindfulness, kindness, and having an open mind. I want my daughter to grow up in a community that supports the path she chooses, whatever that may be, and this is the congregation to do just that! Of course, my husband and I love the portions for adults too! ... I am so glad that my husband, my daughter, and I officially joined the church this past summer!&rdquo;</p> - <span class="highlight">RayAnne Ramone</span>
+                <p>&ldquo;I love how they teach the children about love, mindfulness, kindness, and having an open mind. <strong>I want my daughter to grow up in a community that supports the path she chooses,</strong> whatever that may be, and this is the congregation to do just that!&rdquo;</p><span class="highlight">RayAnne Ramone</span>
             </div>
             <div class="row__4 testimonials__testimonial">
-                <p>&ldquo;I don't know what I would do without this church. Everyone is so friendly. It is easy to feel comfortable and find a spiritual home here. What a loving and open congregation!&rdquo;</p> - <span class="highlight">Lee Hagerman</span>
+                <p>&ldquo;I don't know what I would do without this church. Everyone is so friendly. It is <strong>easy to feel comfortable and find a spiritual home here.</strong> What a loving and open congregation!&rdquo;</p><span class="highlight">Lee Hagerman</span>
             </div>
         </div>
+    </div>
+
+    <div id="where-we-are" class="page-section where" data-matching-link="#where-we-are-link">
+        <h2 class="title">Where We <strong>Are</strong></h2>
+        <div class="where" id="map"></div>
     </div>
 
     <footer class="footer">
         <p class="footer__text">Copyright &copy;2018 Denton UU Fellowship</p>
     </footer>
 
+    <script>
+        function initMap() {
+            var uluru = {lat: 33.226232, lng: -97.144162};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA5ng609D4nEBoHmO4EJxhJMQ_amfx9Kgc&callback=initMap">
+    </script>
+      
 </body>
 </html>

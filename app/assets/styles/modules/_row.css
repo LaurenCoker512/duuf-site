@@ -2,9 +2,8 @@
     @mixin clearfix;
 
     &__4 {
-        @mixin atMedium {
-            width: 27%;
-            float: left;
+        @mixin atLarge {
+            flex: 1;
         }
     }
 

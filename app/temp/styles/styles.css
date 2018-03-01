@@ -658,11 +658,10 @@ ul {
         display: table;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
 
 .row__4 {
-            width: 27%;
-            float: left
+            flex: 1
     }
     }
 
@@ -776,17 +775,40 @@ ul {
 
 .testimonials {
     width: 100%;
-    min-height: 38rem;
+    min-height: 35rem;
     background-image: url("../../../assets/images/yard-work-4.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
+    text-align: justify;
     padding: 4rem;
 }
 
+@media (min-width: 1200px) {
+
+.testimonials__container {
+            display: flex;
+            justify-content: center
+    }
+    }
+
 .testimonials__testimonial {
         background-color: rgba(255, 255, 255, 0.8);
-        padding: 1.5rem;
+        padding: 1rem;
         margin: 0 1.5rem;
+        max-width: 20rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
+.where {
+
+}
+
+#map {
+    max-width: 500px;
+    height: 400px;
+    background-color: grey;
+}
