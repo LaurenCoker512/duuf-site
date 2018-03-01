@@ -4,3 +4,9 @@
 @import "base/_mixins";
 @import "modules/_large-hero";
 @import "modules/_btn";
+@import "modules/_who";
+@import "modules/_title";
+@import "modules/_highlight";
+@import "modules/_page-section";
+@import "modules/_img";
+@import "modules/_row";
