@@ -367,6 +367,37 @@ ul {
     position: relative;
 }
 
+.large-hero__image {
+        width: 100%;
+        min-height: 50rem;
+        margin-top: 0;
+        background-image: url("../../../assets/images/wedding-4-xs.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+@media (min-width: 530px) {
+
+.large-hero__image {
+            background-image: url("../../../assets/images/wedding-4-s.jpg")
+    }
+    }
+
+@media (min-width: 800px) {
+
+.large-hero__image {
+            background-image: url("../../../assets/images/wedding-4-m.jpg")
+    }
+    }
+
+@media (min-width: 1200px) {
+
+.large-hero__image {
+            background-image: url("../../../assets/images/wedding-4-l.jpg")
+    }
+    }
+
 .large-hero__text-content {
         position: absolute;
         top: 50%;
@@ -477,9 +508,11 @@ ul {
     font-size: 1rem;
     font-weight: 300;
     padding: 1rem;
+    margin-top: 0;
     transition: all .3s ease-out;
     text-decoration: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .btn--pink {
@@ -510,6 +543,8 @@ ul {
         font-weight: 300;
         text-align: center;
         padding: 0.2rem 1rem;
+        max-width: 50rem;
+        margin: 2rem auto;
     }
 
 .who__description {
@@ -543,6 +578,20 @@ ul {
     font-weight: 300;
     font-size: 1.7rem;
 }
+
+@media (min-width: 530px) {
+
+.title {
+        font-size: 2.3rem
+}
+    }
+
+@media (min-width: 800px) {
+
+.title {
+        font-size: 3rem
+}
+    }
 
 .title__subtitle {
         font-size: 1.3rem;
@@ -647,3 +696,34 @@ ul {
 .row--gutters > div {
         padding: 0 3rem;
     }
+
+.header {
+    
+}
+
+.newsletter {
+    width: 100%;
+    height: 15rem;
+    background-image: url("../../../assets/images/march-7.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.newsletter__message {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-shadow: -1px 1px 1px #000;
+        margin: 3rem 3rem 1rem 3rem;
+    }
+
+.footer {
+    width: 100%;
+    height: 10rem;
+    background-image: url("../../../assets/images/duuf-front.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}

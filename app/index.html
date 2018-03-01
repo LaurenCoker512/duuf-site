@@ -10,48 +10,38 @@
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="">
             <div class="">
                 <div class="">DUUF</div>
             </div>
-              
-            <div class="">
-                <div class=""></div>
-            </div>
-              
             <div class="">
                 <div class="">
                     <a href="#" class="">Contact Us</a>
                 </div>
-            <nav class="">
-                <ul>
-                    <li><a href="#our-beginning" id="our-beginning-link">Who We Are</a></li>
-                    <li><a href="#features" id="features-link">What We Do</a></li>
-                    <li><a href="#testimonials" id="testimonials-link">Where We Are</a></li>
-                </ul>
-            </nav>
+                <nav class="">
+                    <ul>
+                        <li><a href="#our-beginning" id="our-beginning-link">Who We Are</a></li>
+                        <li><a href="#features" id="features-link">What We Do</a></li>
+                        <li><a href="#testimonials" id="testimonials-link">Where We Are</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
     <div class="large-hero">
-        <picture>
-            <source srcset="assets/images/wedding-4-l.jpg" media="(min-width: 1200px)">
-            <source srcset="assets/images/wedding-4-m.jpg" media="(min-width: 800px)">
-            <source srcset="assets/images/wedding-4-s.jpg" media="(min-width: 530px)">
-            <img src="assets/images/wedding-4-xs.jpg" alt="DUUF Joint Wedding Ceremony July 2015">
-        </picture>
-        
-        <div class="large-hero__text-content">
-            <div>
-              <h1 class="large-hero__title-large">Denton</h1>
-              <h1 class="large-hero__title-small">Unitarian Universalist</h1>
-              <h1 class="large-hero__title-large">Fellowship</h1>
-              <p class="large-hero__description">We are a loving, diverse, open fellowship working together to inspire spiritual growth, encourage ethical actions, seek truth and improve the community and the world.</p>
-              <p><a href="#" class="large-hero__link btn btn--pink"><strong>Join us on Sunday</strong></a></p>
+        <div class="large-hero__image">
+            <div class="large-hero__text-content">
+                <div>
+                    <h1 class="large-hero__title-large">Denton</h1>
+                    <h1 class="large-hero__title-small">Unitarian Universalist</h1>
+                    <h1 class="large-hero__title-large">Fellowship</h1>
+                    <p class="large-hero__description">We are a loving, diverse, open fellowship working together to inspire spiritual growth, encourage ethical actions, seek truth and improve the community and the world.</p>
+                    <button class="large-hero__link btn btn--pink"><strong>Join us on Sunday</strong></button>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 
     <div id="who-we-are" class="page-section" data-matching-link="#who-we-are-link">
@@ -131,13 +121,18 @@
         </div>
     </div>
 
+    <div id="newsletter-promo" class="page-section newsletter">
+        <h3 class="newsletter__message">For more information about current and upcoming events at DUUF,</h3>
+        <button class="btn btn--pink">Sign up for our newsletter!</button>
+    </div>
+
     <div id="what-we-do" class="page-section" data-matching-link="#what-we-do-link">
         <h2 class="title">What We Do</h2>
         <div class="row row--gutters">
             <h3 class="title title__subtitle">Lifespan Faith Development</h3>
             <div class="row__5 row__5--left">
                 <picture>
-                    <source                     srcset="assets/images/kids-with-santa-xxxl.jpg"     media="(min-width: 1700px)">
+                    <source srcset="assets/images/kids-with-santa-xxxl.jpg"     media="(min-width: 1700px)">
                     <source srcset="assets/images/kids-with-santa-xxl.jpg" media="(min-width: 1480px)">
                     <source srcset="assets/images/kids-with-santa-xl.jpg" media="(min-width: 1300px)">
                     <source srcset="assets/images/kids-with-santa-l.jpg" media="(min-width: 1200px)">
@@ -151,9 +146,9 @@
                 <p>Each week during our worship services, classes are offered for infants, young children, and teenaged youth. Parents, please arrive prior to the start of service to sign in your children at the Welcome Wagon located near the outside entrance to the sanctuary. Wednesday evening youth group for middle and high school, OUTreach Denton’s Sunday evening youth group, and summer camps create other opportunities for connection and learning.</p>
                 <h5 class="title title__h5">Sunday Morning</h5>
                 <ul>
-                    <li>9:15am: Nursery Opens. Our nursery is open and staffed for children three years of age or younger.</li>
-                    <li>9:30am and 11:30am: Worship Begins. Children four years old and up attend the beginning of the service with their parents. 10-15 minutes into the service, children are escorted to their classes.</li>
-                    <li>10:30am and 12:30pm: Worship Ends. After service is over, parents pick up children at their classroom and/or nursery.</li>
+                    <li><span class="highlight">9:15am: Nursery Opens.</span> Our nursery is open and staffed for children three years of age or younger.</li>
+                    <li><span class="highlight">9:30am and 11:30am: Worship Begins.</span> Children four years old and up attend the beginning of the service with their parents. 10-15 minutes into the service, children are escorted to their classes.</li>
+                    <li><span class="highlight">10:30am and 12:30pm: Worship Ends.</span> After service is over, parents pick up children at their classroom and/or nursery.</li>
                 </ul>
                 <h4 class="title title__h4">Adult Faith Development</h4>
                 <p>We grow and learn throughout our whole lives (not just as children). At DUUF we create opportunities for adults to explore the big questions of life, grow spiritually and personally, promote social justice, and connect with one another and the larger community. Throughout the year we offer classes, books discussions, life skills workshops, special events, and film screenings. All are welcome to participate.</p>
@@ -169,8 +164,11 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4Cqnmijd278" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
-        <h3>For more information about current and upcoming events at DUUF, please <a href="#">sign up for our newsletter!</a></h3>
     </div>
+
+    <footer class="footer">
+        <p>Copyright &copy;2018 Denton UU Fellowship.</p>
+    </footer>
 
 </body>
 </html>

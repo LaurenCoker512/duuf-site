@@ -1,6 +1,28 @@
 .large-hero {
     position: relative;
 
+    &__image {
+        width: 100%;
+        min-height: 50rem;
+        margin-top: 0;
+        background-image: url("../../../assets/images/wedding-4-xs.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @mixin atSmall {
+            background-image: url("../../../assets/images/wedding-4-s.jpg");
+        }
+
+        @mixin atMedium {
+            background-image: url("../../../assets/images/wedding-4-m.jpg");
+        }
+
+        @mixin atLarge {
+            background-image: url("../../../assets/images/wedding-4-l.jpg");
+        }
+    }
+
     &__text-content {
         position: absolute;
         top: 50%;
