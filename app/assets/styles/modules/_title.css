@@ -16,6 +16,10 @@
     &__subtitle {
         font-size: 1.3rem;
         color: $mainOrange;
+
+        @mixin atMedium {
+            font-size: 2rem;
+        }
     }
 
     &__h4 {

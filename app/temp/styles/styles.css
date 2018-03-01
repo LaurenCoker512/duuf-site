@@ -371,31 +371,10 @@ ul {
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/wedding-4-xs.jpg");
+        background-image: url("../../../assets/images/yard-work-5.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
-    }
-
-@media (min-width: 530px) {
-
-.large-hero__image {
-            background-image: url("../../../assets/images/wedding-4-s.jpg")
-    }
-    }
-
-@media (min-width: 800px) {
-
-.large-hero__image {
-            background-image: url("../../../assets/images/wedding-4-m.jpg")
-    }
-    }
-
-@media (min-width: 1200px) {
-
-.large-hero__image {
-            background-image: url("../../../assets/images/wedding-4-l.jpg")
-    }
     }
 
 .large-hero__text-content {
@@ -419,7 +398,7 @@ ul {
 .large-hero__title-large {
         font-size: 1.5rem;
         font-weight: 300;
-        color: #dd7e3e;
+        color: #fff;
         /* text-shadow: 2px 2px 3px #303030; */
         margin: 0;
     }
@@ -448,7 +427,7 @@ ul {
 .large-hero__title-small {
         font-size: 1.3rem;
         font-weight: 700;
-        color: #be3d7a;
+        color: #d63e85;
         /* text-shadow: 2px 2px 3px #303030; */
         margin: 0;
     }
@@ -476,8 +455,9 @@ ul {
 
 .large-hero__description {
         font-size: 1rem;
-        color: #1e1e1e;
-        text-shadow: -1px 1px 1px #fff;
+        font-weight: 300;
+        color: #fff;
+        /* text-shadow: -1px 1px 1px #fff; */
         max-width: 18.75rem;
         margin: 10px auto;
     }
@@ -504,7 +484,7 @@ ul {
     }
 
 .btn {
-    color: #be3d7a;
+    color: #d63e85;
     font-size: 1rem;
     font-weight: 300;
     padding: 1rem;
@@ -516,12 +496,12 @@ ul {
 }
 
 .btn--pink {
-        border: 2px solid #be3d7a;
+        border: 2px solid #d63e85;
     }
 
 .btn--pink:hover {
             color: #fff;
-            background-color: #be3d7a;
+            background-color: #d63e85;
             border: 2px solid transparent;
         }
 
@@ -598,9 +578,16 @@ ul {
         color: #dd7e3e;
     }
 
+@media (min-width: 800px) {
+
+.title__subtitle {
+            font-size: 2rem
+    }
+    }
+
 .title__h4 {
         font-size: 1.1rem;
-        color: #be3d7a;
+        color: #d63e85;
     }
 
 .title__h5 {
@@ -608,7 +595,7 @@ ul {
     }
 
 .highlight {
-    color: #be3d7a;
+    color: #d63e85;
 }
 
 .page-section {
@@ -625,7 +612,7 @@ ul {
 .img__background {
         height: 30rem;
         width: 100%;
-        background-image: url("../../../assets/images/yard-work-5.jpg");
+        background-image: url("../../../assets/images/wedding-4.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -727,3 +714,11 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.footer__text {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 3.5rem;
+    }

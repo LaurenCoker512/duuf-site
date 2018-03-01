@@ -5,22 +5,10 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/wedding-4-xs.jpg");
+        background-image: url("../../../assets/images/yard-work-5.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
-
-        @mixin atSmall {
-            background-image: url("../../../assets/images/wedding-4-s.jpg");
-        }
-
-        @mixin atMedium {
-            background-image: url("../../../assets/images/wedding-4-m.jpg");
-        }
-
-        @mixin atLarge {
-            background-image: url("../../../assets/images/wedding-4-l.jpg");
-        }
     }
 
     &__text-content {
@@ -39,7 +27,7 @@
     &__title-large {
         font-size: 1.5rem;
         font-weight: 300;
-        color: $mainOrange;
+        color: #fff;
         /* text-shadow: 2px 2px 3px #303030; */
         margin: 0;
 
@@ -78,8 +66,9 @@
 
     &__description {
         font-size: 1rem;
-        color: #1e1e1e;
-        text-shadow: -1px 1px 1px #fff;
+        font-weight: 300;
+        color: #fff;
+        /* text-shadow: -1px 1px 1px #fff; */
         max-width: 18.75rem;
         margin: 10px auto;
 
