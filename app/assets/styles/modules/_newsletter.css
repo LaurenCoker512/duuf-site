@@ -1,11 +1,16 @@
 .newsletter {
     width: 100%;
-    height: 15rem;
+    height: 19rem;
     background-image: url("../../../assets/images/march-7.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    
+    @mixin atSmall {
+        height: 15rem;
+        
+    }
 
     &__message {
         color: #fff;
@@ -13,5 +18,10 @@
         font-weight: 300;
         text-shadow: -1px 1px 1px #000;
         margin: 3rem 3rem 1rem 3rem;
+        transform: translateY(-10%);
+
+        @mixin atSmall {
+            transform: translateY(none);
+        }
     }
 }

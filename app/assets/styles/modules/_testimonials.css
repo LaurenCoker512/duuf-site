@@ -6,7 +6,15 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: justify;
-    padding: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @mixin atSmall {
+        padding: 4rem;
+    }
 
     &__container {
         @mixin atLarge {
