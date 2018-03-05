@@ -28,7 +28,7 @@
             display: block;
 
             @mixin atLarge {
-                width: 50%;
+                width: 45%;
                 float: left;
             }
         }
@@ -36,14 +36,10 @@
         &--right {
             display: block;
             text-align: center;
-
-            iframe {
-                width: 560px;
-                height: 315px;
-            }
+            position: relative;
 
             @mixin atLarge {
-                width: 50%;
+                width: 45%;
                 float: right;
             }
         }

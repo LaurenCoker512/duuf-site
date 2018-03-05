@@ -724,7 +724,7 @@ ul {
 @media (min-width: 1200px) {
 
 .row__6--left {
-                width: 50%;
+                width: 45%;
                 float: left
         }
     }
@@ -732,17 +732,13 @@ ul {
 .row__6--right {
             display: block;
             text-align: center;
+            position: relative;
         }
-
-.row__6--right iframe {
-                width: 560px;
-                height: 315px;
-            }
 
 @media (min-width: 1200px) {
 
 .row__6--right {
-                width: 50%;
+                width: 45%;
                 float: right
         }
     }
@@ -1138,12 +1134,37 @@ ul {
         text-align: center;
     }
 
+.where__icons {
+        padding-top: 2rem;
+    }
+
+.where__icons__icon {
+            color: #d63e85;
+            font-size: 2rem;
+            padding: 0.5rem;
+            display: inline;
+        }
+
+.where__icons__icon a:visited {
+                color: #d63e85;
+            }
+
+.where iframe {
+        width: 45%;
+        height: 315px;
+    }
+
+.where::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
 #map {
-    max-width: 500px;
-    min-width: 400px;
+    max-width: 600px;
+    min-width: 350px;
     height: 400px;
     background-color: grey;
-    margin-left: 60%;
 }
 
 .reveal-item {
