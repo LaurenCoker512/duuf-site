@@ -5,6 +5,7 @@
 
         & ul {
             line-height: 1.4;
+            padding-left: 0;
         }
     }
 }

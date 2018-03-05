@@ -5,12 +5,17 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
+    padding: 2.5rem 0;
 
     &__text {
         color: #fff;
         font-size: 1.3rem;
         font-weight: 300;
-        text-align: center;
-        padding: 3.5rem;
+        margin: 50% auto;
+
+        @mixin atMedium {
+            display: inline;
+        }
     }
 }

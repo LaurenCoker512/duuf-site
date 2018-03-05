@@ -14,13 +14,17 @@
     &__text-content {
         position: absolute;
         top: 50%;
-        transform: translateY(-30%);
+        transform: translateY(-70%);
         left: 0;
         width: 100%;
         text-align: center;
 
         @mixin atSmall {
-            transform: translateY(-10%);
+            transform: translateY(-50%);
+        }
+
+        @mixin atMedium {
+            transform: translateY(-40%);
         }
     }
 
@@ -68,7 +72,7 @@
         font-size: 1rem;
         font-weight: 300;
         color: #fff;
-        /* text-shadow: -1px 1px 1px #fff; */
+        text-shadow: -1px 1px 1px #000;
         max-width: 18.75rem;
         margin: 10px auto;
 

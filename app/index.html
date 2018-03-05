@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
+
     <header class="header">
-        <div class="">
-            <div class="">
-                <div class="">DUUF</div>
-            </div>
-            <div class="">
-                <div class="">
-                    <a href="#" class="">Contact Us</a>
-                </div>
-                <nav class="">
-                    <ul>
-                        <li><a href="#our-beginning" id="our-beginning-link">Who We Are</a></li>
-                        <li><a href="#features" id="features-link">What We Do</a></li>
-                        <li><a href="#testimonials" id="testimonials-link">Where We Are</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="header__logo">
+            <img src="assets/images/logo.jpeg" alt="DUUF Logo" class="header__logo__img">
+        </div>
+        <div class="header__menu-icon">
+            <div class="header__menu-icon__middle"></div>
+        </div>
+        <div class="header__menu-content">
+            <button class="btn btn--pink btn--header header__contact">Contact Us</button>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#who-we-are" id="who-we-are-link">Who We Are</a></li>
+                    <li><a href="#what-we-do" id="what-we-do-link">What We Do</a></li>
+                    <li><a href="#where-we-are" id="where-we-are-link">Where We Are</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -38,7 +38,7 @@
                     <h1 class="large-hero__title-small">Unitarian Universalist</h1>
                     <h1 class="large-hero__title-large">Fellowship</h1>
                     <p class="large-hero__description">We are a loving, diverse, open fellowship working together to inspire spiritual growth, encourage ethical actions, seek truth and improve the community and the world.</p>
-                    <button class="large-hero__link btn btn--pink"><strong>Join us on Sunday</strong></button>
+                    <button class="large-hero__link btn btn--pink btn--large"><strong>Join us on Sunday</strong></button>
                 </div>
             </div>
         </div>
@@ -183,13 +183,23 @@
 
     <div id="where-we-are" class="page-section where" data-matching-link="#where-we-are-link">
         <h2 class="title">Where We <strong>Are</strong></h2>
+        <div class="where__info">
+            <p>Come visit us on Sundays at:</p>
+            <span>1111 Cordell St</span>
+            <span>Denton, TX  76201</span>
+            <p>Or contact us at:</p>
+            <span>940-566-1286</span>
+            <a href="mailto:info@dentonuuf.org">info@dentonuuf.org</a>
+        </div>
+
         <div class="where" id="map"></div>
     </div>
 
     <footer class="footer">
-        <p class="footer__text">Copyright &copy;2018 Denton UU Fellowship</p>
+        <span class="footer__text">Copyright &copy;2018 Denton UU Fellowship</span><button class="btn btn--footer btn--pink">Contact Us</button>
     </footer>
 
+    <script src="/temp/scripts/app.js"></script>
     <script>
         function initMap() {
             var uluru = {lat: 33.226232, lng: -97.144162};
