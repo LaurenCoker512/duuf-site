@@ -768,6 +768,7 @@ ul {
 @media (min-width: 800px) {
 
 .header {
+        position: fixed;
         background-color: rgba(255, 255, 255, 0.6)
 }
     }
@@ -1119,3 +1120,16 @@ ul {
     background-color: grey;
     margin-left: 60%;
 }
+
+.reveal-item {
+    opacity: 0;
+    transition: all 1s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.reveal-item--visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
