@@ -806,6 +806,14 @@ ul {
             -webkit-transform: scale(1);
                     transform: scale(1)
     }
+
+            .header__menu-content li {
+                z-index: 2;
+            }
+
+            .header__menu-content .btn {
+                cursor: pointer;
+            }
     }
 
 .header__menu-content--visible {
@@ -843,6 +851,7 @@ ul {
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
+        
         z-index: 10;
     }
 
@@ -858,7 +867,19 @@ ul {
 .header__logo__img {
             background-color: #fff;
             padding: 7px;
+            transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+            -webkit-transform-origin: 50% 0;
+                    transform-origin: 50% 0;
         }
+
+@media (min-width: 800px) {
+                .header--scroll .header__logo__img {
+                    -webkit-transform: scale(.55);
+                            transform: scale(.55);
+                }
+    }
 
 .header__nav {
         float: right;
@@ -990,6 +1011,10 @@ ul {
             background-color: transparent;
             padding: 0
     }
+
+            .header a.is-current-link {
+                color: #dd7e3e;
+            }
     }
 
 .newsletter {
