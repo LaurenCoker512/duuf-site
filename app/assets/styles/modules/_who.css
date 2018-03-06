@@ -1,5 +1,4 @@
 .who {
-
     &__intro {
         font-weight: 300;
         text-align: center;
@@ -11,26 +10,5 @@
     &__description {
         text-align: center;
         padding: 0.2rem 1rem;
-    }
-
-    &__img-subtitle {
-        text-align: center;
-        padding: 1rem;
-        display: inline-block;
-    }
-
-    &__img-subtitle img {
-        transition: all 0.4s ease-out;
-    }
-
-    &__img-subtitle img:hover {
-        opacity: 0.4;
-        cursor: pointer;
-    }
-
-    &__gallery {
-        text-align: center;
-        /* max-width: 70rem;
-        margin: auto 20rem; */
     }
 }

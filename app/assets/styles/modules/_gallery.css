@@ -1,0 +1,28 @@
+.gallery {
+    text-align: center;
+
+    & ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    &__img-subtitle {
+        text-align: center;
+        padding: 1rem;
+        display: inline-block;
+
+        & li {
+            margin-left: 0;
+        }
+    }
+
+    &__img-subtitle img {
+        transition: all 0.4s ease-out;
+    }
+
+    &__img-subtitle img:hover {
+        opacity: 0.4;
+        cursor: pointer;
+    }
+}

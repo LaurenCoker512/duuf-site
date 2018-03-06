@@ -26,4 +26,8 @@
             background-image: url("../../../assets/images/wedding-4.jpg");
         }
     }
+
+    &__kids {
+        padding-bottom: 1rem;
+    }
 }

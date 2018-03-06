@@ -28,7 +28,7 @@
             display: block;
 
             @mixin atLarge {
-                width: 45%;
+                width: 50%;
                 float: left;
             }
         }
@@ -39,7 +39,7 @@
             position: relative;
 
             @mixin atLarge {
-                width: 45%;
+                width: 50%;
                 float: right;
             }
         }
