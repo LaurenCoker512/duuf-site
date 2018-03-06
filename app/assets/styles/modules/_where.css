@@ -1,10 +1,36 @@
 .where {
-    padding: 2rem 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    line-height: 0.8;
+    display: flex;
+    flex-direction: column;
 
-    &__info {
-        width: 50%;
-        float: left;
-        text-align: center;
+    @mixin atLarge {
+        flex-direction: row;
+    }
+
+    &__section {
+        min-width: 40%;
+
+        &__info {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $lightPink;
+        }
+    }
+
+    &__title {
+        color: $mainPink;
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+
+    &__location {
+        & a {
+            text-decoration: none;
+        }
     }
 
     &__icons {
@@ -16,23 +42,13 @@
             padding: 0.5rem;
             display: inline;
 
+            & a {
+                color: $mainPink;
+            }
+
             & a:visited {
                 color: $mainPink;
             }
         }
     }
-
-    & iframe {
-        width: 45%;
-        height: 315px;
-    }
-
-    @mixin clearfix;
-}
-
-#map {
-    max-width: 600px;
-    min-width: 350px;
-    height: 400px;
-    background-color: grey;
 }

@@ -363,7 +363,11 @@ ul {
     padding: 0;
 }
 
-/* $mainOrange: #e48849; */
+/* $mainPink: #; */
+
+/* $mainOrange: #dd7e3e; */
+
+/* $mainOrange: #78419b; */
 
 .large-hero {
     position: relative;
@@ -594,7 +598,7 @@ ul {
 .title {
     text-align: center;
     padding-bottom: 0;
-    color: #dd7e3e;
+    color: #d63e85;
     font-weight: 300;
     font-size: 1.7rem;
 }
@@ -620,7 +624,7 @@ ul {
 
 .title__subtitle {
         font-size: 1.3rem;
-        color: #dd7e3e;
+        color: #d63e85;
     }
 
 @media (min-width: 800px) {
@@ -1026,7 +1030,7 @@ ul {
     }
 
             .header a.is-current-link {
-                color: #dd7e3e;
+                color: #d63e85;
             }
     }
 
@@ -1100,56 +1104,72 @@ ul {
             padding-left: 0;
         }
 
-.testimonials {
-    width: 100%;
-    min-height: 35rem;
-    background-image: url("../../../assets/images/yard-work-4.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: justify;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+.testimonials--author {
+        text-align: right;
+    }
 
-@media (min-width: 530px) {
-
-.testimonials {
-        padding: 4rem
-}
+.testimonials__testimonial {
+        display: flex;
+        flex-direction: column;
     }
 
 @media (min-width: 1200px) {
 
-.testimonials__container {
-            display: flex;
-            justify-content: center
+.testimonials__testimonial {
+            flex-direction: row
     }
     }
 
-.testimonials__testimonial {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 1rem;
-        margin: 0 1.5rem;
-        max-width: 20rem;
+.testimonials__title {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        color: #d63e85;
+        font-weight: 300;
     }
+
+.testimonials__testimonial-section__text {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #edeaed;
+        }
 
 .where {
-    padding: 2rem 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    line-height: 0.8;
+    display: flex;
+    flex-direction: column;
 }
 
-.where__info {
-        width: 50%;
-        float: left;
-        text-align: center;
+@media (min-width: 1200px) {
+
+.where {
+        flex-direction: row
+}
     }
+
+.where__section {
+        min-width: 40%;
+    }
+
+.where__section__info {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #edeaed;
+        }
+
+.where__title {
+        color: #d63e85;
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+
+.where__location a {
+            text-decoration: none;
+        }
 
 .where__icons {
         padding-top: 2rem;
@@ -1162,27 +1182,13 @@ ul {
             display: inline;
         }
 
-.where__icons__icon a:visited {
+.where__icons__icon a {
                 color: #d63e85;
             }
 
-.where iframe {
-        width: 45%;
-        height: 315px;
-    }
-
-.where::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-#map {
-    max-width: 600px;
-    min-width: 350px;
-    height: 400px;
-    background-color: grey;
-}
+.where__icons__icon a:visited {
+                color: #d63e85;
+            }
 
 .reveal-item {
     opacity: 0;

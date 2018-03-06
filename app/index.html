@@ -86,31 +86,40 @@
         </ul>
     </div>
 
-    <div id="testimonials" class="page-section testimonials" data-matching-link="#testimonials-link">
-        <h2 class="title title--white">Our <span class="highlight"><strong>Members</strong></span></h2>
-        <div class="row testimonials__container">
-            <div class="row__4 testimonials__testimonial">
-                <p>&ldquo;The environment and the energy here is full of love and openness. Everyone is kind and happy to be there, and they have so many groups and activities for all ages. If you're looking for <strong>somewhere to feel at home and gain peace of mind,</strong> I highly recommend DUUF.&rdquo;</p><span class="highlight">Autumn Patton</span>
+    <div class="page-section testimonials">
+        <div class="testimonials__testimonial">
+            <div class="testimonials__testimonial-section">
+                <picture>
+                    <source srcset="assets/images/testimonials.jpg" media="(min-width: 1200px)">
+                    <img src="assets/images/testimonials-s.jpg" alt="Mother and daughter at Women's March">
+                </picture>
             </div>
-            <div class="row__4 testimonials__testimonial">
-                <p>&ldquo;I love how they teach the children about love, mindfulness, kindness, and having an open mind. <strong>I want my daughter to grow up in a community that supports the path she chooses,</strong> whatever that may be, and this is the congregation to do just that!&rdquo;</p><span class="highlight">RayAnne Ramone</span>
-            </div>
-            <div class="row__4 testimonials__testimonial">
-                <p>&ldquo;I don't know what I would do without this church. Everyone is so friendly. It is <strong>easy to feel comfortable and find a spiritual home here.</strong> What a loving and open congregation!&rdquo;</p><span class="highlight">Lee Hagerman</span>
+            <div class="testimonials__testimonial-section testimonials__testimonial-section__text">
+                <h2 class="testimonials__title">What Our Visitors Say</h2>
+                <p>&ldquo;The environment and the energy here is full of love and openness. Everyone is kind and happy to be there, and they have so many groups and activities for all ages. If you're looking for <strong>somewhere to feel at home and gain peace of mind,</strong> I highly recommend DUUF.&rdquo;</p><span class="highlight testimonials--author">Autumn Patton</span>
+                <p>&ldquo;I love how they teach the children about love, mindfulness, kindness, and having an open mind. <strong>I want my daughter to grow up in a community that supports the path she chooses,</strong> whatever that may be, and this is the congregation to do just that!&rdquo;</p><span class="highlight testimonials--author">RayAnne Ramone</span>
+                <p>&ldquo;I don't know what I would do without this church. Everyone is so friendly. It is <strong>easy to feel comfortable and find a spiritual home here.</strong> What a loving and open congregation!&rdquo;</p><span class="highlight testimonials--author">Lee Hagerman</span>
             </div>
         </div>
     </div>
 
-    <div id="where-we-are" class="page-section where" data-matching-link="#where-we-are-link">
-        <h2 class="title">Where We <strong>Are</strong></h2>
-        <div class="where__info row__6--left">
-            <p>Come visit us on Sundays at</p>
-            <p class="highlight">1111 Cordell St</p>
-            <p class="highlight">Denton, TX  76201</p>
-            <p>Or contact us at</p>
-            <p class="highlight">940-566-1286</p>
-            <a href="mailto:info@dentonuuf.org">info@dentonuuf.org</a>
+    <div class="page-section where">
+        <div class="where__section where__section__info">
+            <h2 class="where__title">Visit Us</h2>
+            <p>Sundays at 9:30am and 11:30am</p>
+            <div class="where__location">
+                <a href="https://www.google.com/maps/place/1111+Cordell+St,+Denton,+TX+76201/@33.2262363,-97.1463559,17z/data=!3m1!4b1!4m5!3m4!1s0x864dca7a4a89787b:0x70c4aec4fcd0ba24!8m2!3d33.2262318!4d-97.1441619" target="_blank">
+                    <p class="highlight">1111 Cordell St</p>
+                    <p class="highlight">Denton, TX  76201</p>
+                </a>
+            </div>
             <div class="where__icons">
+                <div class="where__icons__icon">
+                    <a href="mailto:info@dentonuuf.org"><i class="fas fa-at"></i></a>
+                </div>
+                <div class="where__icons__icon">
+                    <a href="tel:+19405661286"><i class="fas fa-phone"></i></a>
+                </div>
                 <div class="where__icons__icon">
                     <a href="http://dentonuuf.org/duuf-wp/?feed=rss2" target="_blank"><i class="fas fa-rss"></i></a>
                 </div>
@@ -122,8 +131,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="where row__6--right" id="map"></div>
+        <div class="where__section">
+            <img src="assets/images/duuf.jpg" alt="DUUF">
+        </div>
     </div>
 
     <footer class="footer">
@@ -131,22 +141,6 @@
     </footer>
 
     <script src="/temp/scripts/app.js"></script>
-    <script>
-        function initMap() {
-            var uluru = {lat: 33.226232, lng: -97.144162};
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 13,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA5ng609D4nEBoHmO4EJxhJMQ_amfx9Kgc&callback=initMap">
-    </script>
       
 </body>
 </html>
