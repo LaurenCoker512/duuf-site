@@ -341,13 +341,19 @@ template {
   display: none;
 }
 
+/* $mainPink: #; */
+
+/* $mainOrange: #dd7e3e; */
+
+/* $mainOrange: #78419b; */
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    color: #423b42;
 }
 
 img {
@@ -362,12 +368,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-/* $mainPink: #; */
-
-/* $mainOrange: #dd7e3e; */
-
-/* $mainOrange: #78419b; */
 
 .large-hero {
     position: relative;
@@ -459,7 +459,8 @@ ul {
     }
 
 .large-hero__title-small {
-        font-size: 1.3rem;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.7rem;
         font-weight: 700;
         color: #d63e85;
         text-shadow: -1px 1px 1px #000;
@@ -469,21 +470,21 @@ ul {
 @media (min-width: 530px) {
 
 .large-hero__title-small {
-            font-size: 1.8rem
+            font-size: 2.1rem
     }
     }
 
 @media (min-width: 800px) {
 
 .large-hero__title-small {
-            font-size: 2.5rem
+            font-size: 2.8em
     }
     }
 
 @media (min-width: 1200px) {
 
 .large-hero__title-small {
-            font-size: 3rem
+            font-size: 3.4rem
     }
     }
 
@@ -529,6 +530,13 @@ ul {
     cursor: pointer;
 }
 
+@media (min-width: 800px) {
+
+.btn {
+        font-size: 1.2rem
+}
+    }
+
 .btn a {
         color: #fff;
         text-decoration: none;
@@ -564,6 +572,7 @@ ul {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
     }
 
 @media (min-width: 800px) {
@@ -571,15 +580,9 @@ ul {
 .btn--footer {
             margin-left: 1.5rem;
             margin-top: 0;
-            display: inline
+            display: inline;
+            font-size: 1rem
     }
-    }
-
-@media (min-width: 800px) {
-
-.btn {
-        font-size: 1.2rem
-}
     }
 
 .who__intro {
@@ -618,7 +621,7 @@ ul {
 @media (min-width: 800px) {
 
 .title {
-        font-size: 3rem
+        font-size: 2.7rem
 }
     }
 
@@ -647,6 +650,10 @@ ul {
 .highlight {
     color: #d63e85;
 }
+
+.highlight--cursive {
+        font-family: 'Dancing Script', cursive;
+    }
 
 .page-section {
     padding: 1.3rem 0;
@@ -774,7 +781,7 @@ ul {
 
 .header {
         position: fixed;
-        background-color: rgba(255, 255, 255, 0.6)
+        background-color: rgba(237, 234, 237, 0.7)
 }
     }
 
@@ -1017,10 +1024,20 @@ ul {
     }
 
 .header a {
-        color: #d63e85;
+        color: #423b42;
+        text-shadow: -1px 1px 1px #fff;
         text-decoration: none;
         padding: 0.3rem;
+        transition: color .3s ease-out;
     }
+
+.header a.is-current-link {
+            color: #d63e85;
+        }
+
+.header a:hover {
+            color: #d63e85;
+        }
 
 @media (min-width: 800px) {
 
@@ -1071,18 +1088,24 @@ ul {
 
 .footer {
     width: 100%;
-    height: 10rem;
-    background-image: url("../../../assets/images/duuf-front.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 9rem;
+    background-color: #423b42;
     text-align: center;
-    padding: 2.5rem 0;
+    padding-top: 1.8rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
+@media (min-width: 800px) {
+
+.footer {
+        height: 7rem
+}
+    }
 
 .footer__text {
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 300;
         margin: 50% auto;
     }
@@ -1230,4 +1253,61 @@ ul {
 .gallery__img-subtitle img:hover {
         opacity: 0.4;
         cursor: pointer;
+    }
+
+.get-involved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+
+.get-involved {
+        flex-direction: row
+}
+    }
+
+.get-involved__section {
+        position: relative;
+        margin: 1rem auto;
+        align-self: flex-start;
+    }
+
+@media (min-width: 800px) {
+
+.get-involved__section {
+            margin: 0 1.5rem
+    }
+    }
+
+.get-involved__section .get-involved__overlay {
+        background-color: rgba(214, 62, 133, 0.8);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        overflow: hidden;
+    }
+
+.get-involved__section:hover .get-involved__overlay {
+        opacity: 1;
+    }
+
+.get-involved__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        color: #fff;
+        text-shadow: -1px 1px 1px #000;
+        font-size: 1.2rem;
+        text-align: center;
     }

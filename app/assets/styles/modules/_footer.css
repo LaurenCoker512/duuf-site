@@ -1,16 +1,19 @@
 .footer {
     width: 100%;
-    height: 10rem;
-    background-image: url("../../../assets/images/duuf-front.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 9rem;
+    background-color: $darkPink;
     text-align: center;
-    padding: 2.5rem 0;
+    padding-top: 1.8rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    @mixin atMedium {
+        height: 7rem;
+    }
 
     &__text {
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 300;
         margin: 50% auto;
 

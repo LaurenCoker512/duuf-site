@@ -69,22 +69,23 @@
     }
 
     &__title-small {
-        font-size: 1.3rem;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.7rem;
         font-weight: 700;
         color: $mainPink;
         text-shadow: -1px 1px 1px #000;
         margin: 0;
 
         @mixin atSmall {
-            font-size: 1.8rem;
+            font-size: 2.1rem;
         }
 
         @mixin atMedium {
-            font-size: 2.5rem;
+            font-size: 2.8em;
         }
 
         @mixin atLarge {
-            font-size: 3rem;
+            font-size: 3.4rem;
         }
     }
 

@@ -1,0 +1,49 @@
+.get-involved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
+
+    &__section {
+        position: relative;
+        margin: 1rem auto;
+        align-self: flex-start;
+
+        @mixin atMedium {
+            margin: 0 1.5rem;
+        }
+    }
+
+    &__section &__overlay {
+        background-color: rgba(214, 62, 133, 0.8);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        overflow: hidden;
+    }
+
+    &__section:hover &__overlay {
+        opacity: 1;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-shadow: -1px 1px 1px #000;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

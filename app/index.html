@@ -6,7 +6,7 @@
     <title>Denton Unitarian Universalist Fellowship</title>
     <meta name="keywords" content="unitarian universalist, unitarian universalism, denton, texas, denton tx, church, liberal church, religion">
     <meta name="description" content="Denton Unitarian Universalist Fellowship is a thriving, dynamic congregation located in the heart of Denton, Texas. We are a loving, diverse, open fellowship that inspires spiritual growth, encourages ethical actions, seeks truth and has a deep commitment to improving the community and the world by our actions.">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:300,400,400i,700" rel="stylesheet"> 
     <link rel="stylesheet" href="temp/styles/styles.css">
     <script defer src="./assets/scripts/modules/fontawesome-all.min.js"></script>
 </head>
@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header__all-content">
             <div class="header__logo">
-                <img src="assets/images/logo.jpeg" alt="DUUF Logo" class="header__logo__img">
+                <a href="./index.html"><img src="assets/images/logo.jpeg" alt="DUUF Logo" class="header__logo__img"></a>
             </div>
             <div class="header__menu-icon">
                 <div class="header__menu-icon__middle"></div>
@@ -23,7 +23,7 @@
             <div class="header__menu-content">
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html" class="is-current-link">Home</a></li>
                         <li><a href="./who-we-are.html" id="who-we-are-link">Who We Are</a></li>
                         <li><a href="./what-we-do.html" id="what-we-do-link">Get Involved</a></li>
                     </ul>
@@ -47,43 +47,50 @@
     </div>
 
     <div class="page-section">
-        <div>
-          <h2 class="who title">Welcome to <strong>DUUF!</strong></h2>
+          <h2 class="who title">Welcome to <span class="highlight--cursive">DUUF!</span></h2>
           <h3 class="who who__intro">Our church is about <span class="highlight">genuine inclusion, depth and joy, reason and spirit.</span> We have been a voice of progressive religion in Denton since 1949, working toward a more just and compassionate world in all of what we do. We have been on the forefront of LGBTQ+ initiatives for decades.</h3>
           <h3 class="who who__intro">Join us any Sunday at <span class="highlight">9:30am</span> or <span class="highlight">11:30am</span> for one of our services. And if you're ready to make the leap to membership, fill out a <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZEY0L_qVk1Xv-McIZ1wSKeBXW-EUMm58NOwytgDjP_ZEOFA/viewform?c=0&w=1" class="highlight" target="_blank">membership commitment form</a> today!</h3>
-          <div class="wrapper wrapper--medium wrapper--b-margin img__background">
-          </div>
+          <div class="wrapper wrapper--medium wrapper--b-margin img__background"></div>
     </div>
 
     <div class="page-section">
         <h2 class="title">Get <strong>Involved</strong></h2>
-        <ul class="gallery">
-            <div class="gallery__img-subtitle">
-                <li>
-                    <a href="./what-we-do.html">
-                        <img src="assets/images/gus.jpg" alt="Gus Holding a Sign" class="img--round">
-                    </a>
-                    <span class="highlight">Children's Classes</span>
-                </li>
+        <div class="get-involved">
+            <div class="get-involved__section">
+                <a href="./what-we-do.html">
+                    <div class="get-involved__overlay"></div>
+                        <picture>
+                            <source srcset="assets/images/child-lfd.jpg" media="(min-width: 800px)">
+                            <source srcset="assets/images/child-lfd-m.jpg" media="(min-width: 530px)">
+                            <img src="assets/images/child-lfd-s.jpg" alt="Gus Holding a Sign">
+                        </picture>
+                        
+                        <span class="get-involved__text">Children's Classes</span>
+                </a>
             </div>
-            <div class="gallery__img-subtitle">
-                <li>
-                    <a href="./what-we-do.html">
-                        <img src="assets/images/wedding-6.jpg" alt="Linda with a Hat" class="img--round">
-                    </a>
-                    <span class="highlight">Adult Classes</span>
-                    
-                </li>
+            <div class="get-involved__section">
+                <a href="./what-we-do.html">
+                    <div class="get-involved__overlay"></div>
+                        <picture>
+                            <source srcset="assets/images/adult-lfd.jpg" media="(min-width: 800px)">
+                            <source srcset="assets/images/adult-lfd-m.jpg" media="(min-width: 530px)">
+                            <img src="assets/images/adult-lfd-s.jpg" alt="Linda with a Hat">
+                        </picture>
+                        <span class="get-involved__text">Adult Classes</span>
+                </a>
             </div>
-            <div class="gallery__img-subtitle">
-                <li>
-                    <a href="./what-we-do.html">
-                        <img src="assets/images/rainbow-chalice.jpg" alt="Rainbow Chalice" class="img--round">
-                    </a>
-                    <span class="highlight">Services</span>
-                </li>
+            <div class="get-involved__section">
+                <a href="./what-we-do.html">
+                    <div class="get-involved__overlay"></div>
+                        <picture>
+                            <source srcset="assets/images/rainbow-chalice.jpg" media="(min-width: 800px)">
+                            <source srcset="assets/images/rainbow-chalice-m.jpg" media="(min-width: 530px)">
+                            <img src="assets/images/rainbow-chalice-s.jpg" alt="Rainbow Chalice">
+                        </picture>
+                        <span class="get-involved__text">Services</span>
+                </a>
             </div>
-        </ul>
+        </div>
     </div>
 
     <div class="page-section testimonials">
