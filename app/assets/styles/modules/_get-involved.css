@@ -8,6 +8,13 @@
         flex-direction: row;
     }
 
+    &__title {
+        text-align: center;
+        color: $mainPink;
+        font-weight: 300;
+        font-size: 1.7rem;
+    }
+
     &__section {
         position: relative;
         margin: 1rem auto;
@@ -43,7 +50,7 @@
         transform: translate(-50%, -50%);
         color: #fff;
         text-shadow: -1px 1px 1px #000;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 }

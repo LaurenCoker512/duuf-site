@@ -3,7 +3,7 @@ import waypoints from "../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class RevealOnScroll {
     constructor() {
-        this.itemsToReveal = $(".where__section, .testimonials__testimonial, .get-involved__section");
+        this.itemsToReveal = $(".where__section, .testimonials__testimonial, .get-involved__section, .whats-a-uu__section, .large-hero__title-small");
         this.hideInitially();
         this.createWaypoints();
     }

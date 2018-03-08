@@ -354,6 +354,7 @@ template {
 body {
     font-family: 'Roboto', sans-serif;
     color: #423b42;
+    counter-reset: item;
 }
 
 img {
@@ -401,6 +402,16 @@ ul {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+.large-hero__image-uu {
+        width: 100%;
+        min-height: 50rem;
+        margin-top: 0;
+        background-image: url("../../../assets/images/whats-a-uu-hero.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;   
     }
 
 .large-hero__text-content {
@@ -566,6 +577,14 @@ ul {
     }
     }
 
+.btn--wedding {
+        margin: 2rem;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
 .btn--footer {
         margin-bottom: 0;
         margin-top: 1rem;
@@ -585,18 +604,39 @@ ul {
     }
     }
 
-.who__intro {
-        font-weight: 300;
+.who__subtitle {
         text-align: center;
-        padding: 0.2rem 1rem;
-        max-width: 50rem;
-        margin: 2rem auto;
+        color: #d63e85;
+        font-weight: 300;
+        font-size: 1.4rem;
     }
 
-.who__description {
+.who__intro {
+        max-width: 65rem;
+        margin: 0 auto 1rem auto;
         text-align: center;
-        padding: 0.2rem 1rem;
+        font-size: 1.1rem;
     }
+
+.who__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media (min-width: 1200px) {
+
+.who__section {
+            flex-direction: row
+    }
+    }
+
+.who__section__text {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #edeaed;
+        }
 
 .title {
     text-align: center;
@@ -656,7 +696,7 @@ ul {
     }
 
 .page-section {
-    padding: 1.3rem 0;
+    padding: 0.5rem 0;
 }
 
 .img--round {
@@ -673,6 +713,8 @@ ul {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        text-align: center;
+        position: relative;
     }
 
 @media (min-width: 530px) {
@@ -1127,6 +1169,11 @@ ul {
             padding-left: 0;
         }
 
+.testimonials {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 .testimonials--author {
         text-align: right;
     }
@@ -1269,6 +1316,13 @@ ul {
 }
     }
 
+.get-involved__title {
+        text-align: center;
+        color: #d63e85;
+        font-weight: 300;
+        font-size: 1.7rem;
+    }
+
 .get-involved__section {
         position: relative;
         margin: 1rem auto;
@@ -1308,6 +1362,83 @@ ul {
                 transform: translate(-50%, -50%);
         color: #fff;
         text-shadow: -1px 1px 1px #000;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
+
+.whats-a-uu {
+    padding: 1rem 3rem;
+    line-height: 1.3;
+}
+
+.whats-a-uu__intro {
+        max-width: 65rem;
+        margin: 0 auto 1rem auto;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+.whats-a-uu__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media (min-width: 1200px) {
+
+.whats-a-uu__section {
+            flex-direction: row
+    }
+    }
+
+.whats-a-uu__section__text {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #edeaed;
+        }
+
+.whats-a-uu__we-are {
+        padding: 0 3rem 2rem 3rem;
+    }
+
+.whats-a-uu__h4 {
+        color: #d63e85;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+.whats-a-uu__ol {
+        line-height: 1.3;
+        list-style: none;
+    }
+
+.whats-a-uu__ol li {
+            counter-increment: item;
+            margin-bottom: 0.4rem;
+        }
+
+.whats-a-uu__ol li:before {
+            margin-right: 0.8rem;
+            content: counter(item);
+            color: #d63e85;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+.whats-a-uu__ul {
+        line-height: 1.3;
+        list-style: none;
+    }
+
+.whats-a-uu__ul li:before {
+            content: "•";
+            margin-right: 0.8rem;
+            width: 0.7em;
+            color: #d63e85;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: inline-block;
+        }
