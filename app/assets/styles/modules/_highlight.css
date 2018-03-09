@@ -1,7 +1,12 @@
 .highlight {
-    color: $mainPink;
+    color: $mainPurple;
 
     &--cursive {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Homemade Apple', cursive;
+
+        &::before {
+            content: " ";
+            white-space: pre;
+        }
     }
 }

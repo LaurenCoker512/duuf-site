@@ -31,7 +31,7 @@
     }
 
     &__h4 {
-        color: $mainPink;
+        color: $mainPurple;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 300;
@@ -49,7 +49,7 @@
         li:before {
             margin-right: 0.8rem;
             content: counter(item);
-            color: $mainPink;
+            color: $mainPurple;
             font-size: 1.2rem;
             font-weight: 700;
             display: inline-block;
@@ -64,7 +64,7 @@
             content: "•";
             margin-right: 0.8rem;
             width: 0.7em;
-            color: $mainPink;
+            color: $mainPurple;
             font-size: 1.2rem;
             font-weight: 700;
             display: inline-block;

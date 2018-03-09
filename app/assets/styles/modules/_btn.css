@@ -18,12 +18,22 @@
         text-decoration: none;
     }
 
-    &--pink {
-        border: 2px solid $mainPink;
+    &--purple {
+        border: 2px solid $mainPurple;
 
         &:hover {
             color: #fff;
-            background-color: $mainPink;
+            background-color: $mainPurple;
+            border: 2px solid transparent;
+        }
+    }
+
+    &--yellow {
+        border: 2px solid $mainYellow;
+
+        &:hover {
+            color: #fff;
+            background-color: $mainYellow;
             border: 2px solid transparent;
         }
     }

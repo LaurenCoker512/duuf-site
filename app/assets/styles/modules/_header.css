@@ -7,7 +7,12 @@
 
     @mixin atMedium {
         position: fixed;
-        background-color: rgba(237, 234, 237, 0.7)
+    }
+
+    &--reveal {
+        @mixin atMedium {
+            background-color: rgba(20, 20, 20, 0.8);
+        }
     }
 
     &--expanded {
@@ -16,7 +21,7 @@
 
     &__all-content {
         @mixin atMedium {
-            max-width: 1450px;
+            /* max-width: 1450px; */
             margin: 0 auto;
         }
     }
@@ -70,22 +75,11 @@
         }
     }
 
-    &__contact {
-        color: $mainPink;
-        display: block;
-        margin: 0 auto;
-
-        @mixin atMedium {
-            float: right;
-        }
-    }
-
     &__logo {
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        
         z-index: 10;
 
         @mixin atMedium {
@@ -94,14 +88,14 @@
         }
 
         &__img {
-            background-color: #fff;
-            padding: 7px;
             transition: transform .3s ease-out;
             transform-origin: 50% 0;
+            
 
             @mixin atMedium {
                 .header--scroll & {
-                    transform: scale(.51);
+                    transform: scale(.40);
+                    padding-top: 1rem;
                 }
             }
         }
@@ -163,7 +157,7 @@
     &__menu-icon--close-x {
         &::before {
             transform: rotate(45deg) scaleX(1.25);
-            background-color: $mainPink;
+            background-color: $mainYellow;
         }
 
         .header__menu-icon__middle {
@@ -173,7 +167,7 @@
 
         &::after {
             transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-            background-color: $mainPink;
+            background-color: $mainYellow;
         }
     }
 
@@ -209,18 +203,19 @@
     }
 
     a {
-        color: $darkPink;
-        text-shadow: -1px 1px 1px #fff;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 300;
         text-decoration: none;
         padding: 0.3rem;
         transition: color .3s ease-out;
 
         &.is-current-link {
-            color: $mainPink;
+            color: $mainYellow;
         }
 
         &:hover {
-            color: $mainPink;
+            color: $mainYellow;
         }
 
         @mixin atMedium {
@@ -228,7 +223,7 @@
             padding-bottom: 1.5rem;
 
             &.is-current-link {
-                color: $mainPink;
+                color: $mainYellow;
             }
         }
     }

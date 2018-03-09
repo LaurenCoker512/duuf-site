@@ -17,7 +17,7 @@
 
     &__title {
         text-align: center;
-        color: $mainPink;
+        color: $mainPurple;
         font-weight: 300;
     }
 
@@ -27,7 +27,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: $lightPink;
+            /* background-color: $lightPink; */
         }
     }
 }

@@ -17,12 +17,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: $lightPink;
+            /* background-color: $lightPink; */
         }
     }
 
     &__title {
-        color: $mainPink;
+        color: $mainPurple;
         font-size: 1.7rem;
         font-weight: 300;
     }
@@ -37,17 +37,17 @@
         padding-top: 2rem;
 
         &__icon {
-            color: $mainPink;
+            color: $mainPurple;
             font-size: 2rem;
             padding: 0.5rem;
             display: inline;
 
             & a {
-                color: $mainPink;
+                color: $mainPurple;
             }
 
             & a:visited {
-                color: $mainPink;
+                color: $mainPurple;
             }
         }
     }

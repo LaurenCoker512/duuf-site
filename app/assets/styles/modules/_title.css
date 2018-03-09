@@ -1,7 +1,7 @@
 .title {
     text-align: center;
     padding-bottom: 0;
-    color: $mainOrange;
+    color: $mainPurple;
     font-weight: 300;
     font-size: 1.7rem;
 
@@ -15,7 +15,7 @@
 
     &__subtitle {
         font-size: 1.3rem;
-        color: $mainOrange;
+        color: $mainPurple;
 
         @mixin atMedium {
             font-size: 2rem;
@@ -24,7 +24,7 @@
 
     &__h4 {
         font-size: 1.2rem;
-        color: $mainPink;
+        color: $mainPurple;
     }
 
     &__h5 {

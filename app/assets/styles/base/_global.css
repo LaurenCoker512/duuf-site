@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     color: $darkPink;
     counter-reset: item;
 }

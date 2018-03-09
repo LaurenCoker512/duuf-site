@@ -1,7 +1,7 @@
 .flex {
     &__subtitle {
         text-align: center;
-        color: $mainPink;
+        color: $mainPurple;
         font-weight: 300;
         font-size: 1.4rem;
     }

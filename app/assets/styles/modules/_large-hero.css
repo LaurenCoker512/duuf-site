@@ -5,10 +5,30 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/yard-work-5.jpg");
+        background-image: url("../../../assets/images/hero-home-s.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
+
+        @mixin atMedium {
+            background-image: url("../../../assets/images/hero-home-m.jpg");
+            min-height: 50rem;
+        }
+
+        @mixin atLarge {
+            background-image: url("../../../assets/images/hero-home-l.jpg");
+            min-height: 60rem;
+        }
+
+        @mixin atXLarge {
+            background-image: url("../../../assets/images/hero-home-xl.jpg");
+            min-height: 60rem;
+        }
+
+        @mixin atXXLarge {
+            background-image: url("../../../assets/images/hero-home-xxl.jpg");
+            min-height: 60rem;
+        }
     }
 
     &__image-what {
@@ -62,7 +82,7 @@
         font-size: 1.5rem;
         font-weight: 300;
         color: #fff;
-        text-shadow: -1px 1px 1px #000;
+        /* text-shadow: -1px 1px 1px #000; */
         margin: 0;
 
         @mixin atSmall {
@@ -79,12 +99,11 @@
     }
 
     &__title-small {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Homemade Apple', cursive;
         font-size: 1.7rem;
         font-weight: 700;
-        color: $mainPink;
-        text-shadow: -1px 1px 1px #000;
-        margin: 0;
+        color: #fff;
+        margin: 0.5rem 0;
 
         @mixin atSmall {
             font-size: 2.1rem;
@@ -103,7 +122,6 @@
         font-size: 1rem;
         font-weight: 300;
         color: #fff;
-        text-shadow: -1px 1px 1px #000;
         max-width: 18.75rem;
         margin: 10px auto;
 
