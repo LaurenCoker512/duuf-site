@@ -7,7 +7,7 @@
     }
 
     &__background {
-        height: 30rem;
+        height: 25rem;
         width: 100%;
         background-image: url("../../../assets/images/wedding-4-xs.jpg");
         background-repeat: no-repeat;
@@ -15,8 +15,13 @@
         background-position: center;
         text-align: center;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         @mixin atSmall {
+            flex-direction: row;
             background-image: url("../../../assets/images/wedding-4-s.jpg");
         }
 

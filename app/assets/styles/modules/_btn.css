@@ -39,10 +39,8 @@
     }
 
     &--wedding {
-        margin: 2rem;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        margin: 1.5rem 2rem;
+        font-size: 1.8rem;
     }
 
     &--footer {

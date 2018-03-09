@@ -578,11 +578,8 @@ ul {
     }
 
 .btn--wedding {
-        margin: 2rem;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        margin: 1.5rem 2rem;
+        font-size: 1.8rem;
     }
 
 .btn--footer {
@@ -604,40 +601,6 @@ ul {
     }
     }
 
-.who__subtitle {
-        text-align: center;
-        color: #d63e85;
-        font-weight: 300;
-        font-size: 1.4rem;
-    }
-
-.who__intro {
-        max-width: 65rem;
-        margin: 0 auto 1rem auto;
-        text-align: center;
-        font-size: 1.1rem;
-    }
-
-.who__section {
-        display: flex;
-        flex-direction: column;
-    }
-
-@media (min-width: 1200px) {
-
-.who__section {
-            flex-direction: row
-    }
-    }
-
-.who__section__text {
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #edeaed;
-        }
-
 .title {
     text-align: center;
     padding-bottom: 0;
@@ -645,11 +608,6 @@ ul {
     font-weight: 300;
     font-size: 1.7rem;
 }
-
-.title--white {
-        color: #fff;
-        text-shadow: -1px 1px 1px #000;
-    }
 
 @media (min-width: 530px) {
 
@@ -687,6 +645,13 @@ ul {
         margin: 0 auto;
     }
 
+.title__intro {
+        max-width: 65rem;
+        margin: 0 auto 1rem auto;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
 .highlight {
     color: #d63e85;
 }
@@ -707,7 +672,7 @@ ul {
     }
 
 .img__background {
-        height: 30rem;
+        height: 25rem;
         width: 100%;
         background-image: url("../../../assets/images/wedding-4-xs.jpg");
         background-repeat: no-repeat;
@@ -715,11 +680,16 @@ ul {
         background-position: center;
         text-align: center;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 @media (min-width: 530px) {
 
 .img__background {
+            flex-direction: row;
             background-image: url("../../../assets/images/wedding-4-s.jpg")
     }
     }
@@ -746,13 +716,6 @@ ul {
         content: "";
         clear: both;
         display: table;
-    }
-
-@media (min-width: 1200px) {
-
-.row__4 {
-            flex: 1
-    }
     }
 
 .row__5--left {
@@ -1093,41 +1056,6 @@ ul {
             }
     }
 
-.newsletter {
-    width: 100%;
-    height: 19rem;
-    background-image: url("../../../assets/images/march-4.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-}
-
-@media (min-width: 530px) {
-
-.newsletter {
-        height: 15rem
-}
-    }
-
-.newsletter__message {
-        color: #fff;
-        font-size: 1.5rem;
-        font-weight: 300;
-        text-shadow: -1px 1px 1px #000;
-        margin: 3rem 3rem 1rem 3rem;
-        -webkit-transform: translateY(-10%);
-                transform: translateY(-10%);
-    }
-
-@media (min-width: 530px) {
-
-.newsletter__message {
-            -webkit-transform: translateY(none);
-                    transform: translateY(none)
-    }
-    }
-
 .footer {
     width: 100%;
     height: 9rem;
@@ -1441,4 +1369,38 @@ ul {
             font-size: 1.2rem;
             font-weight: 700;
             display: inline-block;
+        }
+
+.flex__subtitle {
+        text-align: center;
+        color: #d63e85;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+
+.flex__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media (min-width: 800px) {
+
+.flex__section--medium {
+                flex-direction: row
+        }
+    }
+
+@media (min-width: 1200px) {
+
+.flex__section--large {
+                flex-direction: row
+        }
+    }
+
+.flex__section__text {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #edeaed;
         }

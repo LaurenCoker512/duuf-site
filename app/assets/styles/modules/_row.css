@@ -1,12 +1,6 @@
 .row {
     @mixin clearfix;
 
-    &__4 {
-        @mixin atLarge {
-            flex: 1;
-        }
-    }
-
     &__5 {
         &--left {
             display: none;
