@@ -16,7 +16,7 @@
     }
 
     &--expanded {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(20, 20, 20, 0.8);
     }
 
     &__all-content {

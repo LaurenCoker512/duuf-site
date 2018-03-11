@@ -372,17 +372,27 @@ ul {
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/hero-home-s.jpg");
-        background-attachment: fixed;
+        background-image: url("../../../assets/images/hero-home-xs.jpg");
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+@media (min-width: 530px) {
+
+.large-hero__image {
+            background-image: url("../../../assets/images/hero-home-s.jpg");
+            min-height: 50rem;
+            background-attachment: scroll
+    }
     }
 
 @media (min-width: 800px) {
 
 .large-hero__image {
             background-image: url("../../../assets/images/hero-home-m.jpg");
-            min-height: 50rem
+            min-height: 50rem;
+            background-attachment: fixed
     }
     }
 
@@ -390,7 +400,8 @@ ul {
 
 .large-hero__image {
             background-image: url("../../../assets/images/hero-home-l.jpg");
-            min-height: 60rem
+            min-height: 60rem;
+            background-attachment: fixed
     }
     }
 
@@ -398,7 +409,8 @@ ul {
 
 .large-hero__image {
             background-image: url("../../../assets/images/hero-home-xl.jpg");
-            min-height: 60rem
+            min-height: 60rem;
+            background-attachment: fixed
     }
     }
 
@@ -406,7 +418,8 @@ ul {
 
 .large-hero__image {
             background-image: url("../../../assets/images/hero-home-xxl.jpg");
-            min-height: 60rem
+            min-height: 60rem;
+            background-attachment: fixed
     }
     }
 
@@ -420,14 +433,59 @@ ul {
         background-position: center;
     }
 
-.large-hero__image-who {
+.large-hero__image-about {
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/yard-work-1.jpg");
-        background-attachment: fixed;
+        background-image: url("../../../assets/images/hero-about-xs.jpg");
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+@media (min-width: 530px) {
+
+.large-hero__image-about {
+            background-image: url("../../../assets/images/hero-about-s.jpg");
+            min-height: 50rem;
+            background-attachment: scroll
+    }
+    }
+
+@media (min-width: 800px) {
+
+.large-hero__image-about {
+            background-image: url("../../../assets/images/hero-about-m.jpg");
+            min-height: 50rem;
+            background-attachment: fixed
+    }
+    }
+
+@media (min-width: 1200px) {
+
+.large-hero__image-about {
+            background-image: url("../../../assets/images/hero-about-l.jpg");
+            min-height: 60rem;
+            background-attachment: fixed
+    }
+    }
+
+@media (min-width: 1800px) {
+
+.large-hero__image-about {
+            background-image: url("../../../assets/images/hero-about-xl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed
+    }
+    }
+
+@media (min-width: 2400px) {
+
+.large-hero__image-about {
+            background-image: url("../../../assets/images/hero-about-xxl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed
+    }
     }
 
 .large-hero__image-uu {
@@ -470,7 +528,6 @@ ul {
         font-size: 1.5rem;
         font-weight: 300;
         color: #fff;
-        /* text-shadow: -1px 1px 1px #000; */
         margin: 0;
     }
 
@@ -638,7 +695,6 @@ ul {
 .title {
     text-align: center;
     padding-bottom: 0;
-    color: #ba2ea9;
     font-weight: 300;
     font-size: 1.7rem;
 }
@@ -682,6 +738,7 @@ ul {
 .title__intro {
         max-width: 65rem;
         margin: 0 auto 1rem auto;
+        padding: 0 2rem;
         text-align: center;
         font-size: 1.1rem;
     }
@@ -692,6 +749,7 @@ ul {
 
 .highlight--cursive {
         font-family: 'Homemade Apple', cursive;
+        color: #ba2ea9;
     }
 
 .highlight--cursive::before {
@@ -715,7 +773,7 @@ ul {
         width: 100%;
         background-image: url("../../../assets/images/wedding-4-xs.jpg");
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
         text-align: center;
         position: relative;
@@ -729,21 +787,24 @@ ul {
 
 .img__background {
             flex-direction: row;
-            background-image: url("../../../assets/images/wedding-4-s.jpg")
+            background-image: url("../../../assets/images/wedding-4-s.jpg");
+            background-attachment: scroll
     }
     }
 
 @media (min-width: 800px) {
 
 .img__background {
-            background-image: url("../../../assets/images/wedding-4-m.jpg")
+            background-image: url("../../../assets/images/wedding-4-m.jpg");
+            background-attachment: fixed
     }
     }
 
 @media (min-width: 1200px) {
 
 .img__background {
-            background-image: url("../../../assets/images/wedding-4.jpg")
+            background-image: url("../../../assets/images/wedding-4.jpg");
+            background-attachment: fixed
     }
     }
 
@@ -836,7 +897,7 @@ ul {
     }
 
 .header--expanded {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(20, 20, 20, 0.8);
     }
 
 @media (min-width: 800px) {
@@ -1187,7 +1248,6 @@ ul {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* background-color: $lightPink; */
         }
 
 .where__title {
@@ -1407,12 +1467,26 @@ ul {
         color: #ba2ea9;
         font-weight: 300;
         font-size: 1.4rem;
+        margin: 1rem 0 0 0;
+    }
+
+@media (min-width: 800px) {
+
+.flex__subtitle {
+            margin: 0
+    }
     }
 
 .flex__section {
         display: flex;
         flex-direction: column;
+        max-width: 800px;
+        margin: 0 auto;
     }
+
+.flex__section--reverse {
+            flex-direction: column-reverse;
+        }
 
 @media (min-width: 800px) {
 
@@ -1429,9 +1503,31 @@ ul {
     }
 
 .flex__section__text {
-            padding: 2rem;
+            padding: 0 1.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #edeaed;
+            align-items: center;
         }
+
+.flex__section__text p {
+                margin-top: 1rem;
+            }
+
+@media (min-width: 800px) {
+
+.flex__section__text p {
+                    margin-bottom: 0
+            }
+    }
+
+.flex__section__text ul {
+                margin-bottom: 1rem;
+            }
+
+@media (min-width: 800px) {
+
+.flex__section__text ul {
+                    margin-bottom: 0
+            }
+    }

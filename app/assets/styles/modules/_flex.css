@@ -4,11 +4,22 @@
         color: $mainPurple;
         font-weight: 300;
         font-size: 1.4rem;
+        margin: 1rem 0 0 0;
+
+        @mixin atMedium {
+            margin: 0;
+        }
     }
     
     &__section {
         display: flex;
         flex-direction: column;
+        max-width: 800px;
+        margin: 0 auto;
+
+        &--reverse {
+            flex-direction: column-reverse;
+        }
 
         &--medium {
             @mixin atMedium {
@@ -23,11 +34,27 @@
         }
 
         &__text {
-            padding: 2rem;
+            padding: 0 1.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: $lightPink;
+            align-items: center;
+
+            & p {
+                margin-top: 1rem;
+
+                @mixin atMedium {
+                    margin-bottom: 0;
+                }
+            }
+
+            & ul {
+                margin-bottom: 1rem;
+                
+                @mixin atMedium {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }

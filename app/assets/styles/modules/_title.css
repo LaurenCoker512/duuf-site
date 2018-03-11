@@ -1,7 +1,6 @@
 .title {
     text-align: center;
     padding-bottom: 0;
-    color: $mainPurple;
     font-weight: 300;
     font-size: 1.7rem;
 
@@ -35,6 +34,7 @@
     &__intro {
         max-width: 65rem;
         margin: 0 auto 1rem auto;
+        padding: 0 2rem;
         text-align: center;
         font-size: 1.1rem;
     }

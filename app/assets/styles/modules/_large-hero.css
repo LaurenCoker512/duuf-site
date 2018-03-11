@@ -5,29 +5,39 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/hero-home-s.jpg");
-        background-attachment: fixed;
+        background-image: url("../../../assets/images/hero-home-xs.jpg");
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
+
+        @mixin atSmall {
+            background-image: url("../../../assets/images/hero-home-s.jpg");
+            min-height: 50rem;
+            background-attachment: scroll;
+        }
 
         @mixin atMedium {
             background-image: url("../../../assets/images/hero-home-m.jpg");
             min-height: 50rem;
+            background-attachment: fixed;
         }
 
         @mixin atLarge {
             background-image: url("../../../assets/images/hero-home-l.jpg");
             min-height: 60rem;
+            background-attachment: fixed;
         }
 
         @mixin atXLarge {
             background-image: url("../../../assets/images/hero-home-xl.jpg");
             min-height: 60rem;
+            background-attachment: fixed;
         }
 
         @mixin atXXLarge {
             background-image: url("../../../assets/images/hero-home-xxl.jpg");
             min-height: 60rem;
+            background-attachment: fixed;
         }
     }
 
@@ -41,14 +51,44 @@
         background-position: center;
     }
 
-    &__image-who {
+    &__image-about {
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/yard-work-1.jpg");
-        background-attachment: fixed;
+        background-image: url("../../../assets/images/hero-about-xs.jpg");
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
+
+        @mixin atSmall {
+            background-image: url("../../../assets/images/hero-about-s.jpg");
+            min-height: 50rem;
+            background-attachment: scroll;
+        }
+
+        @mixin atMedium {
+            background-image: url("../../../assets/images/hero-about-m.jpg");
+            min-height: 50rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atLarge {
+            background-image: url("../../../assets/images/hero-about-l.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atXLarge {
+            background-image: url("../../../assets/images/hero-about-xl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atXXLarge {
+            background-image: url("../../../assets/images/hero-about-xxl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
     }
 
     &__image-uu {
@@ -82,7 +122,6 @@
         font-size: 1.5rem;
         font-weight: 300;
         color: #fff;
-        /* text-shadow: -1px 1px 1px #000; */
         margin: 0;
 
         @mixin atSmall {

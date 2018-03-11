@@ -3,6 +3,7 @@
 
     &--cursive {
         font-family: 'Homemade Apple', cursive;
+        color: $mainPurple;
 
         &::before {
             content: " ";
