@@ -41,14 +41,44 @@
         }
     }
 
-    &__image-what {
+    &__image-involved {
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/march-7.jpg");
-        background-attachment: fixed;
+        background-image: url("../../../assets/images/hero-involved-xs.jpg");
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
+
+        @mixin atSmall {
+            background-image: url("../../../assets/images/hero-involved-s.jpg");
+            min-height: 50rem;
+            background-attachment: scroll;
+        }
+
+        @mixin atMedium {
+            background-image: url("../../../assets/images/hero-involved-m.jpg");
+            min-height: 50rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atLarge {
+            background-image: url("../../../assets/images/hero-involved-l.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atXLarge {
+            background-image: url("../../../assets/images/hero-involved-xl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atXXLarge {
+            background-image: url("../../../assets/images/hero-involved-xxl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
     }
 
     &__image-about {
@@ -95,10 +125,40 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/whats-a-uu-hero.jpg");
-        background-attachment: fixed;
+        background-image: url("../../../assets/images/hero-uu-xs.jpg");
+        background-attachment: scroll;
         background-repeat: no-repeat;
-        background-position: center;   
+        background-position: center;
+        
+        @mixin atSmall {
+            background-image: url("../../../assets/images/hero-uu-s.jpg");
+            min-height: 50rem;
+            background-attachment: scroll;
+        }
+
+        @mixin atMedium {
+            background-image: url("../../../assets/images/hero-uu-m.jpg");
+            min-height: 50rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atLarge {
+            background-image: url("../../../assets/images/hero-uu-l.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atXLarge {
+            background-image: url("../../../assets/images/hero-uu-xl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
+
+        @mixin atXXLarge {
+            background-image: url("../../../assets/images/hero-uu-xxl.jpg");
+            min-height: 60rem;
+            background-attachment: fixed;
+        }
     }
 
     &__text-content {

@@ -13,12 +13,8 @@
     }
 
     &__subtitle {
-        font-size: 1.3rem;
+        font-size: 2rem;
         color: $mainPurple;
-
-        @mixin atMedium {
-            font-size: 2rem;
-        }
     }
 
     &__h4 {
@@ -34,7 +30,7 @@
     &__intro {
         max-width: 65rem;
         margin: 0 auto 1rem auto;
-        padding: 0 2rem;
+        padding: 0 2rem 2rem 2rem;
         text-align: center;
         font-size: 1.1rem;
     }
