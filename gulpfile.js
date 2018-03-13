@@ -7,9 +7,41 @@ var gulp = require("gulp"),
     mixins = require("postcss-mixins"),
     watch = require("gulp-watch"),
     browserSync = require("browser-sync").create(),
-    webpack = require("webpack");
+    modernizr = require("modernizr"),
+    webpack = require("webpack"),
+    imagemin = require("gulp-imagemin"),
+    del = require("del"),
+    usemin = require("gulp-usemin"),
+    rev = require("gulp-rev"),
+    cssnano = require("gulp-cssnano"),
+    uglify = require("gulp-uglify");
 
 gulp.task("default", ["watch"]);
+
+gulp.task("deleteDistFolder", function() {
+    return del("./docs");
+});
+
+gulp.task("optimizeImages", ["deleteDistFolder"], function() {
+    return gulp.src("./app/assets/images/**/*")
+        .pipe(imagemin({
+            progressive: true,
+            interlaced: true,
+            multipass: true
+        }))
+        .pipe(gulp.dest("./docs/assets/images"));
+});
+
+gulp.task("usemin", ["deleteDistFolder", "styles", "scripts"], function() {
+    return gulp.src(["./app/index.html", "./app/about.html", "./app/get-involved.html", "./app/whats-a-uu.html"])
+        .pipe(usemin({
+            css: [function() {return rev()}, function() {return cssnano()}],
+            js: [function() {return rev()}, function() {return uglify()}]
+        }))
+        .pipe(gulp.dest("./docs"));
+})
+
+gulp.task("build", ["deleteDistFolder", "optimizeImages", "usemin"]);
 
 gulp.task("scripts", function(callback){
     webpack(require("./webpack.config.js"), function(err, stats){
@@ -24,6 +56,18 @@ gulp.task("scripts", function(callback){
 gulp.task("watch", ["styles"], function(){
     browserSync.init({
         server: "./app"
+    });
+
+    gulp.watch("./app/assets/styles/**/*.css", ["styles"]);
+    gulp.watch("./app/assets/scripts/**/*.js", function(){
+        gulp.start("scriptsRefresh");
+    });
+    gulp.watch("./app/*.html").on("change", browserSync.reload);
+});
+
+gulp.task("previewDist", ["styles"], function(){
+    browserSync.init({
+        server: "./docs"
     });
 
     gulp.watch("./app/assets/styles/**/*.css", ["styles"]);
