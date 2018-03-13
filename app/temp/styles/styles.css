@@ -1610,9 +1610,16 @@ ul {
 .flex__footer {
         margin-top: 2rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+@media (min-width: 800px) {
+
+.flex__footer {
+            flex-direction: row
+    }
     }
 
 .flex__footer__icons {
