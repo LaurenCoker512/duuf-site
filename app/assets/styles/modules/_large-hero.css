@@ -5,37 +5,37 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../images/hero-home-xs.jpg");
+        background-image: url("../images/hero-home-xs.JPG");
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
 
         @mixin atSmall {
-            background-image: url("../images/hero-home-s.jpg");
+            background-image: url("../images/hero-home-s.JPG");
             min-height: 50rem;
             background-attachment: scroll;
         }
 
         @mixin atMedium {
-            background-image: url("../images/hero-home-m.jpg");
+            background-image: url("../images/hero-home-m.JPG");
             min-height: 50rem;
             background-attachment: fixed;
         }
 
         @mixin atLarge {
-            background-image: url("../images/hero-home-l.jpg");
+            background-image: url("../images/hero-home-l.JPG");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXLarge {
-            background-image: url("../images/hero-home-xl.jpg");
+            background-image: url("../images/hero-home-xl.JPG");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXXLarge {
-            background-image: url("../images/hero-home-xxl.jpg");
+            background-image: url("../images/hero-home-xxl.JPG");
             min-height: 60rem;
             background-attachment: fixed;
         }
@@ -45,37 +45,37 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/hero-involved-xs.jpg");
+        background-image: url("../images/hero-involved-xs.jpg");
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
 
         @mixin atSmall {
-            background-image: url("../../../assets/images/hero-involved-s.jpg");
+            background-image: url("../images/hero-involved-s.jpg");
             min-height: 50rem;
             background-attachment: scroll;
         }
 
         @mixin atMedium {
-            background-image: url("../../../assets/images/hero-involved-m.jpg");
+            background-image: url("../images/hero-involved-m.jpg");
             min-height: 50rem;
             background-attachment: fixed;
         }
 
         @mixin atLarge {
-            background-image: url("../../../assets/images/hero-involved-l.jpg");
+            background-image: url("../images/hero-involved-l.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXLarge {
-            background-image: url("../../../assets/images/hero-involved-xl.jpg");
+            background-image: url("../images/hero-involved-xl.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXXLarge {
-            background-image: url("../../../assets/images/hero-involved-xxl.jpg");
+            background-image: url("../images/hero-involved-xxl.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
@@ -85,37 +85,37 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/hero-about-xs.jpg");
+        background-image: url("../images/hero-about-xs.jpg");
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
 
         @mixin atSmall {
-            background-image: url("../../../assets/images/hero-about-s.jpg");
+            background-image: url("../images/hero-about-s.jpg");
             min-height: 50rem;
             background-attachment: scroll;
         }
 
         @mixin atMedium {
-            background-image: url("../../../assets/images/hero-about-m.jpg");
+            background-image: url("../images/hero-about-m.jpg");
             min-height: 50rem;
             background-attachment: fixed;
         }
 
         @mixin atLarge {
-            background-image: url("../../../assets/images/hero-about-l.jpg");
+            background-image: url("../images/hero-about-l.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXLarge {
-            background-image: url("../../../assets/images/hero-about-xl.jpg");
+            background-image: url("../images/hero-about-xl.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXXLarge {
-            background-image: url("../../../assets/images/hero-about-xxl.jpg");
+            background-image: url("../images/hero-about-xxl.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
@@ -125,37 +125,37 @@
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../../assets/images/hero-uu-xs.jpg");
+        background-image: url("../images/hero-uu-xs.jpg");
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
         
         @mixin atSmall {
-            background-image: url("../../../assets/images/hero-uu-s.jpg");
+            background-image: url("../images/hero-uu-s.jpg");
             min-height: 50rem;
             background-attachment: scroll;
         }
 
         @mixin atMedium {
-            background-image: url("../../../assets/images/hero-uu-m.jpg");
+            background-image: url("../images/hero-uu-m.jpg");
             min-height: 50rem;
             background-attachment: fixed;
         }
 
         @mixin atLarge {
-            background-image: url("../../../assets/images/hero-uu-l.jpg");
+            background-image: url("../images/hero-uu-l.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXLarge {
-            background-image: url("../../../assets/images/hero-uu-xl.jpg");
+            background-image: url("../images/hero-uu-xl.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }
 
         @mixin atXXLarge {
-            background-image: url("../../../assets/images/hero-uu-xxl.jpg");
+            background-image: url("../images/hero-uu-xxl.jpg");
             min-height: 60rem;
             background-attachment: fixed;
         }

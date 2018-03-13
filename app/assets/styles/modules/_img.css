@@ -9,7 +9,7 @@
     &__background {
         height: 25rem;
         width: 100%;
-        background-image: url("../../../assets/images/wedding-4-xs.jpg");
+        background-image: url("../images/wedding-4-xs.jpg");
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position: center;
@@ -22,17 +22,17 @@
 
         @mixin atSmall {
             flex-direction: row;
-            background-image: url("../../../assets/images/wedding-4-s.jpg");
+            background-image: url("../images/wedding-4-s.jpg");
             background-attachment: scroll;
         }
 
         @mixin atMedium {
-            background-image: url("../../../assets/images/wedding-4-m.jpg");
+            background-image: url("../images/wedding-4-m.jpg");
             background-attachment: fixed;
         }
 
         @mixin atLarge {
-            background-image: url("../../../assets/images/wedding-4.jpg");
+            background-image: url("../images/wedding-4.jpg");
             background-attachment: fixed;
         }
     }
