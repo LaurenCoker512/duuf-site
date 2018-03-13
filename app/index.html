@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400i,700|Homemade+Apple" rel="stylesheet"> 
     <link rel="stylesheet" href="temp/styles/styles.css">
     <script defer src="./assets/scripts/modules/fontawesome-all.min.js"></script>
+    <script src="temp/scripts/vendor.js"></script>
 </head>
 <body>
 
@@ -61,10 +62,10 @@
                 <a href="./what-we-do.html">
                     <div class="get-involved__overlay"></div>
                         <picture>
-                            <source srcset="assets/images/child-lfd-s.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/images/child-lfd.jpg" media="(min-width: 800px)">
-                            <source srcset="assets/images/child-lfd-m.jpg" media="(min-width: 530px)">
-                            <img src="assets/images/child-lfd-s.jpg" alt="Gus Holding a Sign">
+                            <source data-srcset="assets/images/child-lfd-s.jpg" media="(min-width: 1200px)">
+                            <source data-srcset="assets/images/child-lfd.jpg" media="(min-width: 800px)">
+                            <source data-srcset="assets/images/child-lfd-m.jpg" media="(min-width: 530px)">
+                            <img class="lazyload" data-src="assets/images/child-lfd-s.jpg" alt="Gus Holding a Sign">
                         </picture>
                         
                         <span class="get-involved__text">Children's Classes</span>
@@ -74,10 +75,10 @@
                 <a href="./what-we-do.html">
                     <div class="get-involved__overlay"></div>
                         <picture>
-                            <source srcset="assets/images/adult-lfd-s.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/images/adult-lfd.jpg" media="(min-width: 800px)">
-                            <source srcset="assets/images/adult-lfd-m.jpg" media="(min-width: 530px)">
-                            <img src="assets/images/adult-lfd-s.jpg" alt="Linda with a Hat">
+                            <source data-srcset="assets/images/adult-lfd-s.jpg" media="(min-width: 1200px)">
+                            <source data-srcset="assets/images/adult-lfd.jpg" media="(min-width: 800px)">
+                            <source data-srcset="assets/images/adult-lfd-m.jpg" media="(min-width: 530px)">
+                            <img class="lazyload" data-src="assets/images/adult-lfd-s.jpg" alt="Linda with a Hat">
                         </picture>
                         <span class="get-involved__text">Adult Classes</span>
                 </a>
@@ -86,10 +87,10 @@
                 <a href="./what-we-do.html">
                     <div class="get-involved__overlay"></div>
                         <picture>
-                            <source srcset="assets/images/rainbow-chalice-s.jpg" media="(min-width: 1200px)">
-                            <source srcset="assets/images/rainbow-chalice.jpg" media="(min-width: 800px)">
-                            <source srcset="assets/images/rainbow-chalice-m.jpg" media="(min-width: 530px)">
-                            <img src="assets/images/rainbow-chalice-s.jpg" alt="Rainbow Chalice">
+                            <source data-srcset="assets/images/rainbow-chalice-s.jpg" media="(min-width: 1200px)">
+                            <source data-srcset="assets/images/rainbow-chalice.jpg" media="(min-width: 800px)">
+                            <source data-srcset="assets/images/rainbow-chalice-m.jpg" media="(min-width: 530px)">
+                            <img class="lazyload" data-src="assets/images/rainbow-chalice-s.jpg" alt="Rainbow Chalice">
                         </picture>
                         <span class="get-involved__text">Services</span>
                 </a>
@@ -101,8 +102,8 @@
         <div class="testimonials__testimonial">
             <div class="testimonials__testimonial-section">
                 <picture>
-                    <source srcset="assets/images/testimonials.jpg" media="(min-width: 1200px)">
-                    <img src="assets/images/testimonials-s.jpg" alt="Mother and daughter at Women's March">
+                    <source data-srcset="assets/images/testimonials.jpg" media="(min-width: 1200px)">
+                    <img class="lazyload" data-src="assets/images/testimonials-s.jpg" alt="Mother and daughter at Women's March">
                 </picture>
             </div>
             <div class="testimonials__testimonial-section testimonials__testimonial-section__text">
@@ -127,7 +128,7 @@
             <p>You&rsquo;re welcome to join our services any Sunday at 9:30am or 11:30am, as well as any of our events. Come as you are, in your Sunday best or your most comfortable casual dress. We can&rsquo;t wait to meet you!</p>
         </div>
         <div class="where__section">
-            <img src="assets/images/duuf.jpg" alt="DUUF">
+            <img class="lazyload" data-src="assets/images/duuf.jpg" alt="DUUF">
         </div>
     </div>
 

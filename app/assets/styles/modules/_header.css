@@ -21,7 +21,6 @@
 
     &__all-content {
         @mixin atMedium {
-            /* max-width: 1450px; */
             margin: 0 auto;
         }
     }
@@ -102,7 +101,12 @@
     }
 
     &__nav {
-        float: right;
+        margin-top: 1rem;
+
+        @mixin atMedium {
+            float: right;
+            margin-top: 0;
+        }
     }
 
     &__menu-icon {
