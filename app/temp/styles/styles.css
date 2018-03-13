@@ -372,7 +372,7 @@ ul {
         width: 100%;
         min-height: 50rem;
         margin-top: 0;
-        background-image: url("../../assets/images/hero-home-xs.jpg");
+        background-image: url("../images/hero-home-xs.jpg");
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-position: center;
@@ -381,7 +381,7 @@ ul {
 @media (min-width: 530px) {
 
 .large-hero__image {
-            background-image: url("../../assets/images/hero-home-s.jpg");
+            background-image: url("../images/hero-home-s.jpg");
             min-height: 50rem;
             background-attachment: scroll
     }
@@ -390,7 +390,7 @@ ul {
 @media (min-width: 800px) {
 
 .large-hero__image {
-            background-image: url("../../assets/images/hero-home-m.jpg");
+            background-image: url("../images/hero-home-m.jpg");
             min-height: 50rem;
             background-attachment: fixed
     }
@@ -399,7 +399,7 @@ ul {
 @media (min-width: 1200px) {
 
 .large-hero__image {
-            background-image: url("../../assets/images/hero-home-l.jpg");
+            background-image: url("../images/hero-home-l.jpg");
             min-height: 60rem;
             background-attachment: fixed
     }
@@ -408,7 +408,7 @@ ul {
 @media (min-width: 1800px) {
 
 .large-hero__image {
-            background-image: url("../../assets/images/hero-home-xl.jpg");
+            background-image: url("../images/hero-home-xl.jpg");
             min-height: 60rem;
             background-attachment: fixed
     }
@@ -417,7 +417,7 @@ ul {
 @media (min-width: 2400px) {
 
 .large-hero__image {
-            background-image: url("../../assets/images/hero-home-xxl.jpg");
+            background-image: url("../images/hero-home-xxl.jpg");
             min-height: 60rem;
             background-attachment: fixed
     }
