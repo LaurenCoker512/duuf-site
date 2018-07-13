@@ -40,6 +40,10 @@
             justify-content: center;
             align-items: center;
 
+            @mixin atMedium {
+                width: 70%;
+            }
+
             & p {
                 margin-top: 1rem;
 

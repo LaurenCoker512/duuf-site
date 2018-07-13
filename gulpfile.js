@@ -69,7 +69,6 @@ gulp.task("previewDist", ["styles"], function(){
     browserSync.init({
         server: "./docs"
     });
-
     gulp.watch("./app/assets/styles/**/*.css", ["styles"]);
     gulp.watch("./app/assets/scripts/**/*.js", function(){
         gulp.start("scriptsRefresh");

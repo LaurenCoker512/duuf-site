@@ -1562,6 +1562,13 @@ ul {
             align-items: center;
         }
 
+@media (min-width: 800px) {
+
+.flex__section__text {
+                width: 70%
+        }
+    }
+
 .flex__section__text p {
                 margin-top: 1rem;
             }
